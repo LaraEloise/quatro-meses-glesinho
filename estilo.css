@@ -1244,3 +1244,574 @@ footer {
     font-style: italic;
     opacity: 0.8;
 }
+
+
+
+/* ================================
+   NOSSAS LEMBRANÇAS
+================================ */
+
+/* ORGANIZAÇÃO DOS CARDS */
+
+.future-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+/* CARDS */
+
+.future-card {
+    overflow: hidden;
+}
+
+/* FOTOGRAFIAS */
+
+.future-icon {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 14px;
+    margin: 18px 0;
+    background: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.future-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.future-card:hover .future-icon img {
+    transform: scale(1.02);
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+
+@media (max-width: 768px) {
+
+    .future-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .future-icon {
+        height: 280px;
+    }
+
+}
+
+/* TELAS PEQUENAS */
+
+@media (max-width: 400px) {
+
+    .future-icon {
+        height: 230px;
+    }
+
+}
+
+/* ================================
+   POLAROID - FOTO
+================================ */
+
+.future-polaroid {
+    width: 280px;
+    max-width: 100%;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+
+/* MOLDURA DA POLAROID */
+
+.future-photo {
+    width: 100%;
+    padding: 12px 12px 18px;
+    background: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* CONTEÚDO DA FOTO */
+
+.future-photo-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ESPAÇO DA IMAGEM */
+
+.future-photo-icon {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background: #fceef4;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGEM */
+
+.future-photo-icon img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+/* TEXTO DENTRO DA POLAROID */
+
+.future-photo-content > p {
+    text-align: center;
+    margin: 14px 0 0;
+    font-size: 14px;
+    color: #493847;
+    line-height: 1.5;
+}
+
+.future-photo-content small {
+    font-size: 11px;
+    color: #a58b9b;
+}
+
+/* LEGENDA EXTERNA */
+
+.future-caption {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.future-caption p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #755b6c;
+}
+
+.future-caption span {
+    font-size: 13px;
+    color: #b47b9b;
+}
+
+/* CELULARES */
+
+@media (max-width: 480px) {
+    .future-polaroid {
+        width: 260px;
+    }
+
+    .future-photo-icon {
+        height: 210px;
+    }
+}
+
+/* ================================
+   NOSSOS DESENHOS
+================================ */
+
+.drawing-section {
+    padding: 70px 20px;
+}
+
+.drawing-intro {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    text-align: center;
+    line-height: 1.8;
+    color: #806b7a;
+}
+
+.drawing-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* CARDS */
+
+.drawing-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    border: 1px solid #f1e5ed;
+}
+
+.drawing-card h3 {
+    text-align: center;
+    color: #a66f91;
+    margin: 0 0 22px;
+    font-size: 20px;
+}
+
+/* COMPARAÇÃO */
+
+.drawing-comparison {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.drawing-item {
+    min-width: 0;
+    text-align: center;
+}
+
+.drawing-item img {
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    object-position: center;
+    background: #fcf7fa;
+    border-radius: 12px;
+    display: block;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.drawing-item img:hover {
+    transform: scale(1.04);
+}
+
+.drawing-item span {
+    display: block;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #92788a;
+    font-weight: 500;
+}
+
+/* IMAGEM ORIGINAL */
+
+.drawing-item.original img {
+    background: #f9eff5;
+}
+
+/* RODAPÉ */
+
+.drawing-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 25px;
+    color: #806b7a;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.drawing-footer span {
+    color: #b47b9b;
+    font-size: 13px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .drawing-section {
+        padding: 45px 12px;
+    }
+
+    .drawing-card {
+        padding: 15px 10px;
+    }
+
+    .drawing-comparison {
+        gap: 7px;
+    }
+
+    .drawing-item img {
+        height: 135px;
+        padding: 4px;
+    }
+
+    .drawing-item span {
+        font-size: 11px;
+    }
+
+    .drawing-card h3 {
+        font-size: 17px;
+    }
+
+}
+
+/* ================================
+   EXPOECE - NOSSO ÁLBUM
+================================ */
+
+.expo-section {
+    padding: 70px 20px;
+    overflow: hidden;
+}
+
+.expo-intro {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    text-align: center;
+    line-height: 1.8;
+    color: #806b7a;
+}
+
+/* CARROSSEL */
+
+.expo-carousel {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+
+.expo-carousel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    color: #a47a94;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#expoCounter {
+    color: #b59aaa;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ÁREA PRINCIPAL */
+
+.expo-stage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    background: #f5f0f2;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* FOTO OU VÍDEO */
+
+.expo-media {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expo-media img,
+.expo-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* PLAQUINHA DE INFORMAÇÕES */
+
+.expo-info {
+    position: absolute;
+    z-index: 3;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+
+    padding: 13px 15px;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+
+    pointer-events: none;
+}
+
+.expo-info span {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: #b47b9b;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.expo-info h3 {
+    margin: 0 0 5px;
+    font-size: 17px;
+    color: #654c60;
+}
+
+.expo-info p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #806b7a;
+}
+
+/* SETAS DE NAVEGAÇÃO */
+
+.expo-arrow {
+    position: absolute;
+    z-index: 5;
+    top: 55%;
+    transform: translateY(-50%);
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.88);
+    color: #956d87;
+
+    font-size: 17px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.expo-arrow:hover {
+    background: #fff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.expo-prev {
+    left: 10px;
+}
+
+.expo-next {
+    right: 10px;
+}
+
+/* BOLINHAS */
+
+.expo-dots {
+    display: flex;
+    justify-content: flex-start;
+    gap: 7px;
+    overflow-x: auto;
+    padding: 15px 3px 8px;
+    scrollbar-width: none;
+}
+
+.expo-dots::-webkit-scrollbar {
+    display: none;
+}
+
+.expo-dot {
+    flex: 0 0 7px;
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #e6d8e1;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.expo-dot.active {
+    background: #b47b9b;
+    transform: scale(1.35);
+}
+
+/* LEGENDA */
+
+.expo-caption {
+    text-align: center;
+    padding: 13px 5px 5px;
+}
+
+.expo-caption span {
+    color: #b47b9b;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.expo-caption p {
+    color: #806b7a;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 8px 0 0;
+}
+
+/* MENSAGEM FINAL */
+
+.expo-footer {
+    max-width: 600px;
+    margin: 40px auto 0;
+    text-align: center;
+    color: #806b7a;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.expo-footer span {
+    color: #b47b9b;
+    font-size: 13px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .expo-section {
+        padding: 45px 12px;
+    }
+
+    .expo-carousel {
+        padding: 11px;
+    }
+
+    .expo-info {
+        top: 8px;
+        left: 8px;
+        right: 8px;
+        padding: 10px 12px;
+    }
+
+    .expo-info h3 {
+        font-size: 15px;
+    }
+
+    .expo-info p {
+        font-size: 11px;
+    }
+
+    .expo-arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+}
